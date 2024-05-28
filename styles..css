@@ -1,0 +1,128 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  /* color: white; */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+  background-color: rgb(1, 1, 70);
+  /* border: 2px solid red; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+main {
+  /* border: 2px solid green; */
+  height: 100%;
+  width: 85%;
+  max-width: 650px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+header,
+footer {
+  border: 2px solid;
+  height: 15%;
+}
+
+label {
+  font-size: 1.5rem;
+  padding: 2px;
+}
+
+.input-section {
+  display: flex;
+  justify-content: space-between;
+  /* border: 2px solid red; */
+  height: 40px;
+  width: 100%;
+  /* max-width: 500px; */
+}
+
+input {
+  height: 100%;
+  width: 90%;
+  /* max-width: 650px; */
+  padding: 10px;
+  border: 2px solid blue;
+}
+
+form {
+  padding: 5px;
+}
+
+.task-list {
+  /* border: 2px solid; */
+  margin-top: 20px;
+}
+
+.task-container {
+  border: 2px solid rgba(0, 0, 255, 0.308);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.task-container:hover {
+  transform: scale(1.01);
+}
+
+.task-text {
+  background-color: rgba(0, 0, 255, 0.308);
+  border: 2px solid rgba(0, 0, 255, 0.308);
+  width: 100%;
+  /* max-width: 400px; */
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.modify-buttons {
+  /* border: 2px solid blue; */
+  width: 60%;
+  max-width: 170px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  border: none;
+  color: white;
+  width: 70px;
+  height: 100%;
+  background-color: rgba(0, 0, 255, 0.308);
+}
+
+button:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 620px) {
+  input {
+    width: 85%;
+    /* max-width: 750px; */
+  }
+  .modify-buttons {
+    /* border: 2px solid blue; */
+    margin-left: 15px;
+  }
+  .task-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
